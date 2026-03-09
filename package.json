@@ -1,0 +1,55 @@
+{
+  "name": "lenis-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server providing Lenis smooth scroll expertise to AI assistants. Knowledge-based — no external API calls.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "lenis-mcp-server": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "clean": "rimraf dist",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "lenis",
+    "smooth-scroll",
+    "ai",
+    "ai-tools",
+    "scroll-animation",
+    "gsap",
+    "scrolltrigger"
+  ],
+  "author": "Ricardo",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devAndreotti/lenis-mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/devAndreotti/lenis-mcp-server/issues"
+  },
+  "homepage": "https://github.com/devAndreotti/lenis-mcp-server#readme",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.6.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
